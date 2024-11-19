@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+        <title>Rust WASM test</title>
+        <style>
+            button, span {
+                vertical-align: top;
+                margin-bottom: 20px;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src='wasm/rust_wasm.js'></script>
+        <script>
+            async function run() {
+                await wasm_bindgen();
+            }
+            run();
+        </script>
+    </body>
+</html>
